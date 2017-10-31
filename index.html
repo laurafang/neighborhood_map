@@ -4,19 +4,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <title>Neighorhood Map</title>
+  <title>Neighorhood Map- Coffee Shop in Bay Area</title>
   <link rel="stylesheet" href="css/stylesheet.css">
+  <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100%;
+        position: relative;
+      }
+      input {
+        font-size: 12px;
+      }
+      h1 {
+        color: #525454;
+        font-size: 22px;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+      #hide-listings,
+      #show-listings {
+        width: 48%;
+      }
+      hr {
+        background: #D0D7D9;
+        height: 1px;
+        margin: 20px 0 20px 0;
+        border: none;
+      }
+      #map {
+        bottom:0px;
+        height: 100%;
+        left: 362px;
+        position: absolute;
+        right: 0px;
+      }
+      .options-box {
+        background: #fff;
+        border: 1px solid #999;
+        border-radius: 3px;
+        height: 100%;
+        line-height: 35px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+        width: 340px;
+      }
+      #pano {
+        width: 200px;
+        height: 200px;
+      }
+      #search-within-time-text {
+        width: 84%;
+      }
+      .text {
+        font-size: 12px;
+      }
+      #toggle-drawing {
+        width: 27%;
+        position: relative;
+        margin-left: 10px;
+      }
+      #zoom-to-area-text {
+        width: 70%;
+      }
+      #zoom-to-area {
+        width: 24%;
+      }
+    </style>
 </head>
 
 <body>
+  <div id="map"></div>
+  <script>
+     var map;
+     function initMap(){
+       map = new google.maps.Map(document.getElementById('map'))
+        center:{lat:40.7413549,lng:-73.9980244},
+        zoom:13
+      });
+      var tribeca = {lat:40.7413549,lng:-73.9980244};
+      var marker = new google.maps.Marker({
+        position: tribeca,
+        map:map,
+        title:'First Marker!'
+      });
+     }
+  </script>
   <div id="nav-bar">
   </div>
   <div id="nav-menu">
   </div>
-  
+
   <script src="js/scripts.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRbqnlOwYRIwFtcv61LLDUG1kIxnZsL5M&v=3&callback=initMap"></script>
 </body>
 
 </html>
