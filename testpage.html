@@ -39,23 +39,23 @@
       #map {
         bottom:0px;
         height: 100%;
-        left: 0px;
+        left: 362px;
         position: absolute;
         right: 0px;
-        z-index: -10;
+
       }
       .options-box {
 
-        background-color: rgba(0, 0, 0,0.5);
+        background-color: rgba(0, 0, 0,0.7);
         border: 0px solid #999;
-        border-radius: 3px;
+        border-radius: 0px;
         height: 100%;
         line-height: 35px;
         padding: 10px 10px 30px 10px;
         text-align: left;
         width: 340px;
         color:rgba(255, 255, 255,0.9);
-        z-index: 10;
+
       }
       #pano {
         width: 200px;
@@ -227,7 +227,10 @@
         // Normally we'd have these in a database instead.
         var locations = [
           {title: 'Bitter+Sweet', location: {lat: 37.3181711, lng: -122.031522}},
-          {title: 'La Terra Bakery & Cafe', location: {lat: 37.3368891, lng: -122.0223834}}
+          {title: 'La Terra Bakery & Cafe', location: {lat: 37.3368891, lng: -122.0223834}},
+          {title: 'Starbucks', location: {lat: 37.3348801, lng: -122.01487250}},
+          {title: 'Philz Coffee', location: {lat: 37.3242543, lng: -122.0105234}}
+
 
         ];
         var largeInfowindow = new google.maps.InfoWindow();
