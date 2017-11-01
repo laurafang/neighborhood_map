@@ -28,7 +28,7 @@
       }
       #hide-listings,
       #show-listings {
-        width: 48%;
+        width: 35%;
       }
       hr {
         background: #D0D7D9;
@@ -88,7 +88,7 @@
         text-align: center;
         font-size: 12px;
         padding: 8px;
-      
+
         transition: all 0.5s;
         cursor: pointer;
         margin: 10px;
@@ -118,7 +118,7 @@
         <hr>
         <div>
           <input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
-          <input id="zoom-to-area" type="button" value="Zoom">
+          <input id="zoom-to-area" class="button" value="Zoom">
         </div>
         <hr>
         <div>
@@ -137,13 +137,13 @@
           </select>
           <span class="text">of</span>
           <input id="search-within-time-text" type="text" placeholder="Ex: Bitter + Sweet, Town Center Lane, Cupertino, CA">
-          <input id="search-within-time" type="button" value="Go">
+          <input id="search-within-time" class="button" value="Go">
         </div>
         <hr>
         <div>
           <span class="text">Search for nearby places</span>
           <input id="places-search" type="text" placeholder="Ex: Pizza delivery in NYC">
-          <input id="go-places" type="button" value="Go">
+          <input id="go-places" class="button" value="Go">
         </div>
       </div>
       <div id="map"></div>
