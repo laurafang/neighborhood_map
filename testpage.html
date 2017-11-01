@@ -87,13 +87,21 @@
         color: #FFFFFF;
         text-align: center;
         font-size: 12px;
-        padding: 10px;
-        width: 48%;
+        padding: 8px;
+      
         transition: all 0.5s;
         cursor: pointer;
-        margin: 5px;
+        margin: 10px;
+
       }
-      
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
     </style>
   </head>
   <body>
@@ -105,7 +113,7 @@
           <input id="hide-listings" class="button" value="Hide Listings">
           <hr>
           <span class="text"> Draw a shape to search within it for homes!</span>
-          <input id="toggle-drawing"  type="button" value="Drawing Tools">
+          <input id="toggle-drawing"  class="button" value="Drawing Tools">
         </div>
         <hr>
         <div>
