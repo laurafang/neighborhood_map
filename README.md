@@ -1,5 +1,5 @@
 # neighborhood_map
-udacity P5
+
 # project description
 You will develop a single page application featuring a map of your neighborhood  
 or a neighborhood you would like to visit. You will then add functionality to   
